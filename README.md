@@ -1,4 +1,3 @@
-
 # 🚒 Gestión de Emergencias
 
 Sistema desarrollado en Java con Swing, utilizando el patrón arquitectónico MVC (Modelo - Vista - Controlador) y una base de datos MySQL.  El sistema permite gestionar información relacionada con emergencias, personal, jerarquías, vehículos y tipos de emergencia, manteniendo la información persistida en una base de datos.
@@ -21,16 +20,18 @@ Sistema desarrollado en Java con Swing, utilizando el patrón arquitectónico MV
 - MySQL
 - JDBC / MySQL Connector
 - MVC (Modelo–Vista–Controlador)
-- LGoodDatePicker
+- JDatePicker
 - IntelliJ IDEA
 
 ## 🏗️ Arquitectura
 
+```text
 src/
 ├── modelo/          # Entidades, DAO y conexión a MySQL
 ├── vista/           # Interfaces gráficas Swing
 ├── controlador/     # Lógica y eventos de la aplicación
 └── util/            # Validaciones y utilidades
+```
 
 ## 🗃️ Modelo de datos
 
@@ -52,8 +53,8 @@ Las tablas intermedias permiten representar la relación entre una emergencia y 
 2. Tener instalado y ejecutándose MySQL.
 3. Crear la base de datos `gestion_emergencias` y sus tablas.
 4. Configurar las credenciales en `src/modelo/Conexion.java`.
-5. Agregar las dependencias necesarias.
-6. Ejecutar `Main.java`.
+5. Agregar los JAR de MySQL Connector/J y JDatePicker a las dependencias del módulo en IntelliJ IDEA.
+6. Ejecutar la clase `Main`, ubicada en `src/Main.java`.
 
 ## 🎯 Objetivo del proyecto
 
